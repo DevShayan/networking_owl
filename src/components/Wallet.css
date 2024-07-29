@@ -1,0 +1,68 @@
+#wallet {
+    margin: 40px 30px;
+}
+
+#wallet p {
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+#wallet h1 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#bal-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#w-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#bal-wrapper button {
+    color: white;
+    background-color: #036788;
+    width: 100%;
+}
+
+#trans-table {
+    border: 1px solid #c1c1c1;
+    width: 100%;
+    margin-top: 50px;
+    border-collapse: collapse;
+}
+
+#trans-table th {
+    text-align: left;
+}
+
+#trans-table th {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#trans-table tr {
+    border-bottom: 1px solid #c1c1c1;
+}
+
+#trans-table tr, #trans-table td, #trans-table th {
+    height: 50px;
+    padding-left: 30px;
+}
+
+#trans-table tr:last-child {
+    background-color: #ececec;
+    color: black;
+}
+
+#trans-table th:first-child {
+    text-align: center;
+}

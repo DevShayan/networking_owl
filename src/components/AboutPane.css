@@ -1,0 +1,80 @@
+#about {
+    margin-bottom: 60px;
+}
+
+#about-pane {
+    display: flex;
+    background-color: #0097c9;
+    color: white;
+    width: 100%;
+}
+
+#modelf2 {
+    width: 40vw;
+    object-fit: cover;
+}
+
+#about-content {
+    padding-top: 100px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+#about-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#para {
+    margin-right: 50px;
+    text-align: justify;
+}
+
+#about-btn-wrapper button {
+    text-transform: uppercase;
+}
+
+#para-wrapper {
+    display: flex;
+}
+
+#first-mode, #second-mode {
+    margin: 50px;
+    text-align: justify;
+    border: 1px solid #c9c9c9;
+    border-radius: 20px;
+    padding: 50px 50px 0 50px;
+}
+
+#about h3 {
+    margin-top: 0px;
+}
+
+#modelf3 {
+    width: 40vw;
+    object-fit: cover;
+}
+
+#tree-wrapper {
+    display: flex;
+    margin: 50px 0;
+}
+
+#tree-wrapper img {
+    width: 50vw;
+    object-fit: cover;
+}
+
+#tree-wrapper p {
+    text-align: justify;
+}
+
+#second-mode + a button {
+    color: white;
+    background-color: #046788;
+    text-transform: uppercase;
+    display: flex;
+    margin: auto;
+}
+

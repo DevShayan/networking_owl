@@ -1,0 +1,10 @@
+#nav-wrapper {
+    display: flex;
+}
+
+#d-content {
+    width: 100%;
+    height: max-content;
+    /* navbar width */
+    margin-left: 205px;
+}

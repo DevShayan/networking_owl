@@ -1,0 +1,13 @@
+#route-error {
+    text-align: center;
+    margin: auto;
+}
+
+#route-error h4 {
+    font-size: 1.8rem;
+}
+
+#err-type {
+    font-style: italic;
+    color: #868686;
+}

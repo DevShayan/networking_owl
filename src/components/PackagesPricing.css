@@ -1,0 +1,36 @@
+.packages-pricing {
+    margin: 0 60px 60px 60px;
+}
+
+.packages-wrapper {
+    display: flex;
+    flex-basis: 0;
+}
+
+.package {
+    border: 1px solid #c9c9c9;
+    border-radius: 20px;
+    margin: 0 14px;
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+.package p {
+    text-align: justify;
+}
+
+.package h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.package button {
+    width: 100%;
+    color: white;
+    background-color: #046788;
+    margin: 30px 0;
+}

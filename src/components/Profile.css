@@ -1,0 +1,115 @@
+#profile {
+    margin: 40px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prof-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.prof-column button {
+    background-color: #036788;
+    color: white;
+}
+
+.prof-column button:not(table button) {
+    margin-bottom: 20px;
+    align-self: flex-end;
+}
+
+.prof-column button:not(table button):disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+#pf-wrapper {
+    position: relative;
+    width: min-content;
+    margin-bottom: 20px;
+}
+
+#pf-wrapper img {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+#pf-wrapper div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000044;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    border-radius: 100%;
+}
+
+#pf-wrapper div input[type="file"] {
+    display: none;
+}
+
+#pf-wrapper span {
+    margin: 0 10px;
+    padding: 6px;
+    outline: 2px solid black;
+    border-radius: 100%;
+    user-select: none;
+    cursor: pointer;
+}
+
+.prof-column table span {
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.prof-column > .err-msg {
+    max-width: 200px;
+}
+
+#ref-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#profile table td:first-child {
+    padding-right: 20px;
+}
+
+#profile table td:nth-child(2) {
+    padding-right: 10px;
+}
+
+#profile table input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#profile .err-msg {
+    color: red;
+    font-weight: 400;
+}
+
+#profile table button {
+    padding: 5px;
+    margin-top: 3px;
+    border-radius: 8px;
+}
+
+#profile table button:nth-child(2) {
+    margin-left: 6px;
+}
+
+#profile table button span {
+    display: flex;
+    margin: 0;
+    font-size: 1rem;
+}
+
+#profile .prof-column img {
+    border-radius: 100%;
+}
+

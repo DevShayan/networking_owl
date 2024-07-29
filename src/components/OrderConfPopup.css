@@ -1,0 +1,56 @@
+#order-conf {
+    margin: 30px;
+}
+
+#order-conf h2, #order-conf h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 50px 0;
+}
+
+#order-conf h3 {
+    font-size: 1.4rem;
+    margin: 0 0 16px 0;
+}
+
+#order-conf img {
+    width: 200px;
+    display: flex;
+    align-self: self-start;
+    margin-right: 50px;
+}
+
+#order-conf > div {
+    display: flex;
+    margin: 40px 0;
+}
+
+#order-conf > div > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#order-conf > div > div > p {
+    margin: 6px 0;
+}
+
+#order-conf .err-msg {
+    color: red;
+}
+
+#oc-points p:last-of-type {
+    color: red;
+}
+
+#oc-points p:nth-last-of-type(2) span {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+#order-conf button {
+    background-color: #036788;
+    color: white;
+    margin-top: 30px;
+    align-self: flex-end;
+}

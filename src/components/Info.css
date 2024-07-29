@@ -1,0 +1,36 @@
+#info {
+    display: flex;
+    padding-top: 100px;
+    background-color: #0097c9;
+    color: white;
+    width: 100%;
+}
+
+#modelf1 {
+    width: 40vw;
+    object-fit: cover;
+}
+
+#info-content {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#info-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#para {
+    margin-right: 50px;
+    text-align: justify;
+}
+
+#info-btn-wrapper button {
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+
+

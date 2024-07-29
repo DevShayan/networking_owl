@@ -1,0 +1,12 @@
+#pay-wd {
+  margin: 0 60px 60px 60px;
+}
+
+#pay-wd p {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#wd-card-wrapper {
+  display: flex;
+}

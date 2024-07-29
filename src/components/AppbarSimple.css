@@ -1,0 +1,32 @@
+.appbar-simple {
+    height: 100px;
+    width: calc(100% - 60px);
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    top: 0;
+    background-color: #036788;
+    justify-content: space-between;
+    color: white;
+}
+
+.heading-pack-simple {
+    display: flex;
+    align-items: center;
+}
+
+.heading-pack-simple + button {
+    text-transform: uppercase;
+}
+
+#appbar-title-simple {
+    font-size: 1.6rem;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#logo-simple {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}

@@ -1,0 +1,17 @@
+#pay-dep {
+  margin: 0 60px 60px 60px;
+}
+
+#pay-dep p {
+  text-align: justify;
+}
+
+#pay-dep p:last-child {
+  color: red;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#dep-card-wrapper {
+  display: flex;
+}

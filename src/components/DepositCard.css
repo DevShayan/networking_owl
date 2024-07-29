@@ -1,0 +1,53 @@
+#dep-card {
+    border: 1px solid #c9c9c9;
+    border-radius: 20px;
+    margin: 0 14px;
+    padding: 0 20px;
+}
+
+#dep-card div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#dep-card h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+
+#dep-card h3:not(:first-child) {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#dep-card img {
+    width: 50px;
+    height: 50px;
+}
+
+#dep-card span {
+    font-size: 2rem;
+    color: gray;
+}
+
+#dep-card label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+#dep-card input {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+#dep-card button {
+    width: 100%;
+    color: white;
+    background-color: #046788;
+    margin: 20px 0 30px 0;
+}

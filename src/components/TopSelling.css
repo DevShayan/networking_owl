@@ -1,0 +1,8 @@
+#top-selling {
+    width: 100%;
+}
+
+#grid {
+    display: flex;
+    justify-content: center;
+}

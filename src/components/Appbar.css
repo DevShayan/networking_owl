@@ -1,0 +1,55 @@
+#appbar {
+    height: 100px;
+    width: calc(100% - 60px);
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    /* top: 0; */
+    background-color: #036788;
+    justify-content: space-between;
+    color: white;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+#action-buttons button {
+    margin-left: 30px;
+}
+
+#ab-links {
+    color: #d3d3d3;
+    padding: 0.6em 0.8em;
+}
+
+#ab-links.active {
+    color: white;
+}
+
+.heading-pack {
+    display: flex;
+    align-items: center;
+}
+
+#appbar-title {
+    font-size: 1.6rem;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+#u-prof {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    border-radius: 100%;
+}

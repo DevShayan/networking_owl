@@ -1,0 +1,9 @@
+#top-selling {
+    margin-bottom: 60px;
+}
+
+#b-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

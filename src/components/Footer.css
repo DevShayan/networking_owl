@@ -1,0 +1,37 @@
+#footer {
+    margin-top: auto;
+    background-color: #036788;
+    width: 100%;
+}
+
+#links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+    font-size: 0.8rem;
+}
+
+#footer a {
+    color: white;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer p {
+    margin: 0px;
+}
+
+#footer hr {
+    width: 75vw;
+   border-color: #d1d1d1;
+}
+
+#copyright {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #d1d1d1;
+    padding-bottom: 20px;
+}

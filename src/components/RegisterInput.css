@@ -1,0 +1,73 @@
+#register-input {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    margin: 40px auto 0 auto;
+    border: 1px solid #c1c1c1;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 60px;
+}
+
+#register-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+#register-input input {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    width: 300px;
+}
+
+#register-input input:focus {
+    outline-color: #036788;
+}
+
+#register-input div div{
+    position: relative;
+}
+
+#register-input .eye-icon {
+    position: absolute;
+    top: 44%;
+    left: 96%;
+    translate: -96% -44%;
+    user-select: none;
+    cursor: pointer;
+}
+
+#register-input .err-msg {
+    position: relative;
+    color: red;
+    top: -10%;
+    font-size: 0.9rem;
+}
+
+#reg-err {
+    position: relative;
+    color: red;
+    top: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+
+#register-input button {
+    color: white;
+    background-color: #036788;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#register-input a {
+    align-self: center;
+    margin-top: 30px;
+    color: #036788;
+}
+
+
+
