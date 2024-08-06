@@ -12,6 +12,8 @@ export const user = {
   balance: null,
   people_referred: null,
   referred_by: null,
+  bundles_bought: null,
+  type: null
 };
 
 export const refLink = {

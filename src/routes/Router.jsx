@@ -5,6 +5,7 @@ import Bundles from "../pages/Bundles";
 import About from "../pages/About";
 import Packages from "../pages/Packages";
 import Dashboard from "../pages/Dashboard";
+import AdminDashboard from "../pages/AdminDashboard";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import ConfirmEmail from "../pages/ConfirmEmail";
@@ -12,12 +13,17 @@ import ResetPass from "../pages/ResetPass";
 import Deposit from "../pages/Deposit";
 import Withdraw from "../pages/Withdraw";
 import UserProtected from "../pages/UserProtected";
+import AdminProtected from "../pages/AdminProtected";
 import OrderConfirm from "../pages/OrderConfirm";
 
 import Profile from "../components/Profile";
 import Tree from "../components/Tree";
 import Members from "../components/Members";
 import Wallet from "../components/Wallet";
+import BalanceMod from "../components/BalanceMod";
+import BundlesBought from "../components/BundlesBought";
+import PackOrderConfirm from "../pages/PackOrderConfirm";
+import Contact from "../pages/Contact";
 
 const router = createBrowserRouter([
   {
@@ -37,7 +43,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/contact",
-    element: <RouterError/>,
+    element: <Contact/>,
     errorElement: <RouterError/>
   },
   {
@@ -68,6 +74,23 @@ const router = createBrowserRouter([
       {
         path: "wallet",
         element: <Wallet/>,
+        errorElement: <RouterError/>
+      },
+      {
+        path: "bundles-bought",
+        element: <BundlesBought/>,
+        errorElement: <RouterError/>
+      },
+    ]
+  },
+  {
+    path: "/admin-dashboard",
+    element: <AdminProtected ProtectedPage={AdminDashboard} />,
+    errorElement: <RouterError/>,
+    children: [
+      {
+        path: "balance-mod",
+        element: <BalanceMod/>,
         errorElement: <RouterError/>
       },
     ]
@@ -107,6 +130,11 @@ const router = createBrowserRouter([
     element: <UserProtected ProtectedPage={OrderConfirm} />,
     errorElement: <RouterError/>
   },
+  {
+    path: "/pack-order-conf",
+    element: <UserProtected ProtectedPage={PackOrderConfirm} />,
+    errorElement: <RouterError/>
+  }
 ]);
 
 export default router;

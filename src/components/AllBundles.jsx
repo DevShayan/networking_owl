@@ -1,9 +1,10 @@
 import "./AllBundles.css"
 import Bundle from "./Bundle";
-import bundle1 from "../assets/b1.png"
+import empty from "../assets/empty.jpg"
 import { useState } from "react";
 import { bundles } from "../pojos/bundles";
 import { getBundles } from "../database/api_call";
+import { user } from "../pojos/user";
 
 export default function AllBundles() {
     const [, setReload] = useState(false);
@@ -25,15 +26,16 @@ export default function AllBundles() {
                     bundles.list != null && bundles.list.length != 0 ?
                         bundles.list.map((bundle, index) => 
                         <Bundle
-                            key={Math.random()*999}
-                            img={ bundle1 }
+                            key={index}
+                            img={bundle.image_link ?? empty}
                             title={bundle.name}
                             l1={bundle.description_points[0]}
                             l2={bundle.description_points[1]}
                             l3={bundle.description_points[2]}
                             l4={bundle.description_points[3]}
                             price={bundle.price}
-                            index={index}/>) :
+                            bid={bundle._id}
+                            disabled={user.bundles_bought?.find((i) => i._id == bundle._id) ?? false}/>) :
                         <div></div>
                 }
                 <div id="fill-child"></div>

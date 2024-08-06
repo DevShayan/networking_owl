@@ -1,4 +1,6 @@
 #wd-card {
+    display: flex;
+    flex-direction: column;
     border: 1px solid #c9c9c9;
     border-radius: 20px;
     margin: 0 14px;
@@ -18,14 +20,20 @@
     text-transform: capitalize;
 }
 
+/* last h3 heading */
+#wd-card h3:not(:first-child) {
+    text-align: center;
+}
+
 #wd-card img {
     width: 50px;
     height: 50px;
 }
 
-#wd-card span {
-    font-size: 2rem;
-    color: gray;
+#wd-card svg {
+    width: 32px;
+    height: 32px;
+    fill: gray;
 }
 
 #wd-card label {
@@ -44,5 +52,35 @@
     width: 100%;
     color: white;
     background-color: #046788;
-    margin: 50px 0 30px 0;
+    margin: 50px 0 0 0;
+}
+
+#wd-card .err-msg {
+    color: red;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+#wd-card #inp-wrapper {
+    display: flex;
+    margin-top: 30px;
+}
+
+#wd-card #inp-wrapper button {
+    display: flex;
+    padding: 0 8px;
+    border-radius: 6px;
+    margin: 0 0 0 10px;
+    flex: 1;
+}
+
+#wd-card #inp-wrapper button svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    align-self: center;
+}
+
+#wd-card #w-info {
+    color: black;
 }

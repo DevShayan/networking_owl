@@ -9,6 +9,9 @@
 
 #bundle img {
     width: 200px;
+    height: 140px;
+    border-radius: 50px;
+    object-fit: cover;
 }
 
 #bundle h3 {
@@ -34,5 +37,10 @@
     margin-top: 20px;
     background-color: #046788;
     color: white;
-    text-transform: uppercase;
+    text-transform: capitalize;
+}
+
+#bundle button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
 }

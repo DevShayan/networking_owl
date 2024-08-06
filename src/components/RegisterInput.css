@@ -31,7 +31,9 @@
     position: relative;
 }
 
-#register-input .eye-icon {
+#register-input svg {
+    width: 20px;
+    height: 20px;
     position: absolute;
     top: 44%;
     left: 96%;

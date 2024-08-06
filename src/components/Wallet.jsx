@@ -22,11 +22,11 @@ export default function Wallet() {
       <div id="bal-wrapper">
         <div>
           <p>available balance</p>
-          <h1>{ user.balance } PKR</h1>
+          <h1>{ user.balance.toFixed(1) } PKR</h1>
         </div>
         <div id="w-btn-wrapper">
-          <Link to="/deposit"><button>Deposit</button></Link>
-          <Link to="/withdraw"><button>Withdraw</button></Link>
+          <Link to="/deposit"><button id="dep-btn">Deposit</button></Link>
+          <Link to="/withdraw"><button id="wit-btn">Withdraw</button></Link>
         </div>
       </div>
       <table id="trans-table">
@@ -37,16 +37,19 @@ export default function Wallet() {
           </tr>
           {
             transactions.list != null && transactions.list.length != 0 ?
-              transactions.list.map((transaction) => 
-                <tr key={Math.random()*999}>
+              transactions.list.map((transaction, index) => 
+                <tr key={index}>
                   <td>{transaction.description}</td>
                   <td>{transaction.amount} PKR</td>
                 </tr>) :
-              <tr></tr>
+              <tr>
+                <td>-</td>
+                <td>-</td>
+              </tr>
           }
           <tr>
             <td>Total Amount</td>
-            <td>{user.balance} PKR</td>
+            <td>{user.balance.toFixed(1)} PKR</td>
           </tr>
         </tbody>
       </table>

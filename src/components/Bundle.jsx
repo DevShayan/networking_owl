@@ -11,7 +11,11 @@ export default function Bundle(props) {
             <p id="list">{ props.l3 }</p>
             <p id="list">{ props.l4 }</p>
             <p id="price">Price: { props.price } PKR</p>
-            <Link to={`/order-conf?index=${props.index}`}><button>buy now</button></Link>
+            <Link to={`/order-conf?bid=${props.bid}`}>
+                <button disabled={props.disabled}>
+                    {props.disabled ? "bought" : "buy now"}
+                </button>
+            </Link>
         </div>
     );
 }

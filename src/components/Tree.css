@@ -10,10 +10,11 @@
 }
 
 #arrow-left, #arrow-right {
-    font-size: 2vw;
+    width: 2vw;
+    height: 2vw;
     position: absolute;
     top: 40%;
-    color: black;
+    fill: black;
     padding: 0.6vw;
     border-radius: 1vw;
     cursor: pointer;
@@ -21,7 +22,7 @@
 
 #arrow-left:hover, #arrow-right:hover {
     background-color: #036788;
-    color: white;
+    fill: white;
     user-select: none;
 }
 

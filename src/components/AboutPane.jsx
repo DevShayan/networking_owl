@@ -1,6 +1,6 @@
 import "./AboutPane.css"
-import model1 from "../assets/modelf2.png"
-import model2 from "../assets/modelf3.png"
+import model1 from "../assets/modelf2.webp"
+import model2 from "../assets/modelf3.webp"
 import tree from "../assets/tree_2.png"
 import { Link } from "react-router-dom"
 

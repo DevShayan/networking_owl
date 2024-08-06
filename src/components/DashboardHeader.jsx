@@ -12,8 +12,9 @@ export default function DashboardHeader() {
       </div>
       <ul id="tab-menu">
         <li><NavLink to="profile">Profile</NavLink></li>
-        <li><NavLink to="tree">Money Tree</NavLink></li>
+        <li><NavLink to="tree">My Trees</NavLink></li>
         <li><NavLink to="members">Member details</NavLink></li>
+        <li><NavLink to="bundles-bought">My Bundles</NavLink></li>
         <li><NavLink to="wallet">My Wallet</NavLink></li>
       </ul>
     </div>

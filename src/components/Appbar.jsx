@@ -19,7 +19,7 @@ export default function Appbar() {
         <li><NavLink id="ab-links" to="/about">About</NavLink></li>
         {
           user.name != null ?
-            <Link to="/dashboard/profile">
+            <Link to={user.type == "user" ? "/dashboard/profile" : "/admin-dashboard/balance-mod"}>
               <img src={user.image_link ?? profile} alt="networking-owl logo" id="u-prof"/>
             </Link> :
             <Link to="/login"><button>login</button></Link>

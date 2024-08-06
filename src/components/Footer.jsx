@@ -3,6 +3,16 @@ import "./Footer.css"
 import { user } from "../pojos/user";
 
 export default function Footer() {
+
+  function getLink(path) {
+    if (user.type == null)
+      return path
+    if (user.type == "user")
+      return "/dashboard/profile"
+    if (user.type == "admin")
+      return "/admin-dashboard/balance-mod"
+  }
+
   return (
     <div id="footer">
       <div id="links">
@@ -12,13 +22,13 @@ export default function Footer() {
           <a href="https://wa.me/923148764612" target="_blank">(+92) 314 8964612</a>
         </div>
         <div className="col">
-          <Link to={ user.name == null ? "/login" : "/dashboard/profile" }>Login</Link>
-          <Link to={ user.name == null ? "/register" : "/dashboard/profile" }>Register</Link>
-          <Link to={ user.name == null ? "/register" : "/dashboard/profile" }>Become a member</Link>
+          <Link to={ getLink("/login") }>Login</Link>
+          <Link to={ getLink("/register") }>Register</Link>
+          <Link to={ getLink("/register") }>Become a member</Link>
         </div>
         <div className="col">
           <Link to="/about">About Us</Link>
-          <Link to="/x">Work with us</Link>
+          <Link to="/about">Work with us</Link>
         </div>
         <div className="col">
           <Link to="/x">Download Our App</Link>

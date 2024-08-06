@@ -1,0 +1,78 @@
+#b-mod {
+  margin: 30px;
+}
+
+#b-mod button:disabled {
+  background-color: gray;
+  cursor: wait;
+}
+
+#b-mod .mod-inp-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+#t-btn-wrapper, #b-btn-wrapper{
+  display: flex;
+  justify-content: stretch;
+}
+
+
+#t-btn-wrapper #btn-empty{
+  background-color: transparent;
+  cursor: default;
+}
+
+#t-btn-wrapper #btn-empty:hover{
+  border-color: transparent;
+  cursor: default;
+}
+
+#t-btn-wrapper #btn-empty:focus{
+  outline-color: transparent;
+}
+
+#t-btn-wrapper button{
+  margin-right: 20px;
+  color: white;
+  background-color: #036788;
+  margin-top: 40px;
+  flex: 1;
+}
+
+#b-btn-wrapper {
+  margin: 20px 0;
+}
+
+#b-btn-wrapper button{
+  margin-right: 20px;
+  color: white;
+  background-color: #40af40;
+  flex: 1;
+}
+
+#b-btn-wrapper button:last-child{
+  background-color: #e02a2a;
+}
+
+#b-btn-wrapper button:last-child:disabled{
+  background-color: gray;
+}
+
+#b-mod label {
+  font-size: 1.2rem;
+  width: 300px;
+}
+
+#b-mod input {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  width: 300px;
+}
+
+#b-mod .err-msg {
+  position: relative;
+  color: red;
+  top: -10px;
+}

@@ -28,9 +28,10 @@
     height: 50px;
 }
 
-#dep-card span {
-    font-size: 2rem;
-    color: gray;
+#dep-card svg {
+    width: 32px;
+    height: 32px;
+    fill: gray;
 }
 
 #dep-card label {
@@ -50,4 +51,24 @@
     color: white;
     background-color: #046788;
     margin: 20px 0 30px 0;
+}
+
+#dep-card #inp-wrapper {
+    display: flex;
+    margin: 30px 0;
+}
+
+#dep-card #inp-wrapper button {
+    display: flex;
+    padding: 0 8px;
+    border-radius: 6px;
+    margin: 0 0 0 10px;
+    flex: 1;
+}
+
+#dep-card #inp-wrapper button svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    align-self: center;
 }

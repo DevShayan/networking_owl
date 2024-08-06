@@ -52,18 +52,15 @@
     display: none;
 }
 
-#pf-wrapper span {
+#pf-wrapper svg {
+    width: 30px;
+    height: 30px;
     margin: 0 10px;
     padding: 6px;
     outline: 2px solid black;
     border-radius: 100%;
     user-select: none;
     cursor: pointer;
-}
-
-.prof-column table span {
-    font-weight: 600;
-    margin-right: 6px;
 }
 
 .prof-column > .err-msg {
@@ -94,7 +91,7 @@
 }
 
 #profile table button {
-    padding: 5px;
+    padding: 3px;
     margin-top: 3px;
     border-radius: 8px;
 }
@@ -103,13 +100,13 @@
     margin-left: 6px;
 }
 
-#profile table button span {
-    display: flex;
-    margin: 0;
-    font-size: 1rem;
-}
-
 #profile .prof-column img {
     border-radius: 100%;
+}
+
+#profile button svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
 }
 

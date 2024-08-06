@@ -32,9 +32,10 @@
 }
 
 /* icons */
-.list-tile span:first-child {
-    font-size: 1.6rem;
-    font-variation-settings: "FILL" 1;
+.list-tile svg {
+    fill: white;
+    width: 26px;
+    height: 26px;
 }
 
 #navbar a {

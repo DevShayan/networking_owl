@@ -1,5 +1,5 @@
 import "./Info.css"
-import model from "../assets/modelf1.png"
+import model from "../assets/modelf1.webp"
 import { Link } from "react-router-dom";
 
 export default function Info() {

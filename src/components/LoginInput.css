@@ -31,7 +31,9 @@
     position: relative;
 }
 
-#login-input .eye-icon {
+#login-input svg {
+    width: 20px;
+    height: 20px;
     position: absolute;
     top: 44%;
     left: 96%;
@@ -55,6 +57,23 @@
     text-align: center;
 }
 
+#checkbox-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#checkbox-wrapper input {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+#checkbox-wrapper input:checked {
+    accent-color: #036788;
+    padding: 10px;
+}
+
 
 #login-input button {
     color: white;
@@ -68,6 +87,7 @@
     margin-top: 30px;
     color: #036788;
 }
+
 
 
 

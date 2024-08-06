@@ -1,0 +1,28 @@
+#m-bundles {
+    margin: 40px 30px;
+}
+
+#bun-table {
+    border: 1px solid #c1c1c1;
+    width: 100%;
+    margin-top: 50px;
+    border-collapse: collapse;
+}
+
+#bun-table th {
+    text-align: left;
+}
+
+#bun-table th {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#bun-table tr {
+    border-bottom: 1px solid #c1c1c1;
+}
+
+#bun-table tr, #bun-table td, #bun-table th {
+    height: 50px;
+    padding-left: 30px;
+}

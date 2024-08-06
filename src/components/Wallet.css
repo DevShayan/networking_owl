@@ -29,8 +29,15 @@
 
 #bal-wrapper button {
     color: white;
-    background-color: #036788;
     width: 100%;
+}
+
+#w-btn-wrapper #dep-btn {
+    background-color: #40af40;
+}
+
+#w-btn-wrapper #wit-btn {
+    background-color: #e02a2a;
 }
 
 #trans-table {
@@ -61,8 +68,4 @@
 #trans-table tr:last-child {
     background-color: #ececec;
     color: black;
-}
-
-#trans-table th:first-child {
-    text-align: center;
 }

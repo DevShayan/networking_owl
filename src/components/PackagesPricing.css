@@ -34,3 +34,8 @@
     background-color: #046788;
     margin: 30px 0;
 }
+
+.package button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
