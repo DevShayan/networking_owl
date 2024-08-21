@@ -1,13 +1,13 @@
+import { serverBaseURL } from "../constants/urls";
 import { bundles } from "../pojos/bundles";
 import { members } from "../pojos/members";
 import { transactions } from "../pojos/transactions";
 import { trees } from "../pojos/trees";
 import { user } from "../pojos/user";
 
-const baseURL = "https://localhost:8080";
 
 export async function getCurrUser() {
-  const res = await fetch(`${baseURL}/user/get-curr-user`, {
+  const res = await fetch(`${serverBaseURL}/user/get-curr-user`, {
     credentials: "include",
   });
 
@@ -29,7 +29,7 @@ export async function getCurrUser() {
 }
 
 export async function getUser(uid) {
-  const res = await fetch(`${baseURL}/admin/get-user/${uid}`, {
+  const res = await fetch(`${serverBaseURL}/admin/get-user/${uid}`, {
     credentials: "include",
   });
 
@@ -44,7 +44,7 @@ export async function getUser(uid) {
 }
 
 export async function getRefLink() {
-  const res = await fetch(`${baseURL}/ref-link/get-ref-link/${user.id}`, {
+  const res = await fetch(`${serverBaseURL}/ref-link/get-ref-link/${user.id}`, {
     credentials: "include",
   });
   const jsonData = await res.json();
@@ -56,7 +56,7 @@ export async function getRefLink() {
 }
 
 export async function genRefLink() {
-  const res = await fetch(`${baseURL}/ref-link/gen-ref-link/${user.id}`, {
+  const res = await fetch(`${serverBaseURL}/ref-link/gen-ref-link/${user.id}`, {
     credentials: "include",
   });
   const jsonData = await res.json();
@@ -69,7 +69,7 @@ export async function genRefLink() {
 }
 
 export async function getTrees() {
-  const res = await fetch(`${baseURL}/user/get-trees/${user.id}`, {
+  const res = await fetch(`${serverBaseURL}/user/get-trees/${user.id}`, {
     credentials: "include",
   });
   const jsonData = await res.json();
@@ -86,7 +86,7 @@ export async function register(reqBody, refCode) {
     reqBody.ref_code = refCode;
   }
 
-  const res = await fetch(`${baseURL}/user/register`, {
+  const res = await fetch(`${serverBaseURL}/user/register`, {
     method: "POST",
     credentials: "include",
     headers: {
@@ -108,7 +108,7 @@ export async function register(reqBody, refCode) {
 
 
 export async function login(email, pass, isAdmin) {
-  const res = await fetch(`${baseURL}/user/login`, {
+  const res = await fetch(`${serverBaseURL}/user/login`, {
     method: "POST",
     credentials: "include",
     headers: {
@@ -139,7 +139,7 @@ export async function login(email, pass, isAdmin) {
 
 
 export async function getMembers() {
-  const res = await fetch(`${baseURL}/user/get-people-referred/${user.id}`, {
+  const res = await fetch(`${serverBaseURL}/user/get-people-referred/${user.id}`, {
     credentials: "include",
   });
   const jsonData = await res.json();
@@ -153,7 +153,7 @@ export async function getMembers() {
 }
 
 export async function getTransactions() {
-  const res = await fetch(`${baseURL}/transaction/get-trans/${user.id}`, {
+  const res = await fetch(`${serverBaseURL}/transaction/get-trans/${user.id}`, {
     credentials: "include",
   });
   const jsonData = await res.json();
@@ -166,7 +166,7 @@ export async function getTransactions() {
 }
 
 export async function getPackages() {
-  const res = await fetch(`${baseURL}/packs/get-packages`);
+  const res = await fetch(`${serverBaseURL}/packs/get-packages`);
   const jsonData = await res.json();
   
   if (jsonData.error != null) {
@@ -177,7 +177,7 @@ export async function getPackages() {
 }
 
 export async function getBundles() {
-  const res = await fetch(`${baseURL}/packs/get-bundles`);
+  const res = await fetch(`${serverBaseURL}/packs/get-bundles`);
   const jsonData = await res.json();
   
   if (jsonData.error != null) {
@@ -189,7 +189,7 @@ export async function getBundles() {
 
 
 export async function resetPass(newPass, resetCode) {
-  const res = await fetch(`${baseURL}/user/reset-pass`, {
+  const res = await fetch(`${serverBaseURL}/user/reset-pass`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -210,7 +210,7 @@ export async function resetPass(newPass, resetCode) {
 
 
 export async function buyPackage(pid) {
-  const res = await fetch(`${baseURL}/transaction/buy-package`, {
+  const res = await fetch(`${serverBaseURL}/transaction/buy-package`, {
     method: "POST",
     credentials: "include",
     headers: {
@@ -235,7 +235,7 @@ export async function buyPackage(pid) {
 
 
 export async function buyBundle(bid) {
-  const res = await fetch(`${baseURL}/transaction/buy-bundle`, {
+  const res = await fetch(`${serverBaseURL}/transaction/buy-bundle`, {
     method: "POST",
     credentials: "include",
     headers: {
@@ -265,7 +265,7 @@ export async function editProfile(newUserData, imgRemove) {
     formData.append(key, newUserData[key])
   });
 
-  const res = await fetch(`${baseURL}/user/edit/${user.id}?remove_image=${imgRemove}`, {
+  const res = await fetch(`${serverBaseURL}/user/edit/${user.id}?remove_image=${imgRemove}`, {
     method: "POST",
     credentials: "include",
     body: formData
@@ -283,7 +283,7 @@ export async function editProfile(newUserData, imgRemove) {
 
 
 export async function logout() {
-  const res = await fetch(`${baseURL}/user/logout`, {
+  const res = await fetch(`${serverBaseURL}/user/logout`, {
     credentials: "include",
   });
   const jsonData = await res.json();
@@ -301,7 +301,7 @@ export async function logout() {
 }
 
 export async function modifyBalance(uid, amount) {
-  const res = await fetch(`${baseURL}/admin/mod-balance`, {
+  const res = await fetch(`${serverBaseURL}/admin/mod-balance`, {
     method: "POST",
     credentials: "include",
     headers: {

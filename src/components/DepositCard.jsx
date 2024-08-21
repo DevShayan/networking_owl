@@ -1,9 +1,10 @@
+import { clientBaseURL } from "../constants/urls";
 import { user } from "../pojos/user";
 import "./DepositCard.css"
 
 export default function DepositCard({cardTitle, cardImg, CardSvg, accNum, slipNum}) {
 
-  const adminLink = `http://localhost:5173/admin-dashboard/balance-mod?uid=${user.id}`;
+  const adminLink = `${clientBaseURL}/admin-dashboard/balance-mod?uid=${user.id}`;
   const whatsappLink = `https://api.whatsapp.com/send?phone=${slipNum}&text=${adminLink}`;
 
   return (

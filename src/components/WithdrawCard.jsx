@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./WithdrawCard.css"
 import { user } from "../pojos/user";
+import { clientBaseURL } from "../constants/urls";
 
 export default function WithdrawCard({cardTitle, cardImg, cardLabel1, CardSvg}) {
   const numbRef = useRef();
@@ -35,7 +36,7 @@ export default function WithdrawCard({cardTitle, cardImg, cardLabel1, CardSvg}) 
 
 
     if (!isError) {
-      const adminLink = `http://localhost:5173/admin-dashboard/balance-mod?uid=${user.id}%26amount=${amountInput}`;
+      const adminLink = `${clientBaseURL}/admin-dashboard/balance-mod?uid=${user.id}%26amount=${amountInput}`;
 
       const whatsappLink = `https://api.whatsapp.com/send?phone=${sendToNumber}&text=${cardTitle}%3a+${numbInput}%0Aurl%3a+${adminLink}`;
 

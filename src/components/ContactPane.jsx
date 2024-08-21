@@ -1,5 +1,4 @@
 import "./ContactPane.css";
-import { user } from "../pojos/user";
 import facebook from "../assets/facebook.webp";
 import instagram from "../assets/instagram.webp";
 import gmail from "../assets/gmail.webp";

@@ -23,21 +23,23 @@
     width: 300px;
 }
 
-#pass-input input:focus {
-    outline-color: #036788;
-}
-
-#pass-input div div{
-    position: relative;
-}
-
-#pass-input .eye-icon {
+#pass-input svg {
+    width: 20px;
+    height: 20px;
     position: absolute;
     top: 44%;
     left: 96%;
     translate: -96% -44%;
     user-select: none;
     cursor: pointer;
+}
+
+#pass-input input:focus {
+    outline-color: #036788;
+}
+
+#pass-input div div{
+    position: relative;
 }
 
 #pass-input .err-msg {
