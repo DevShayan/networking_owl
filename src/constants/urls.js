@@ -1,2 +1,2 @@
-export const clientBaseURL = "https://localhost:5173";
-export const serverBaseURL = "https://localhost:8080";
+export const serverBaseURL = "https://api.thenetworkingowl.com";
+export const clientBaseURL = "https://thenetworkingowl.com";

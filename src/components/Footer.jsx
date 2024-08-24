@@ -24,19 +24,20 @@ export default function Footer() {
         <div className="col">
           <Link to={ getLink("/login") }>Login</Link>
           <Link to={ getLink("/register") }>Register</Link>
-          <Link to={ getLink("/register") }>Become a member</Link>
+          <Link to="/packages">Become a member</Link>
         </div>
         <div className="col">
           <Link to="/about">About Us</Link>
           <Link to="/about">Work with us</Link>
         </div>
         <div className="col">
-          <Link to="/x">Download Our App</Link>
-          <Link to="/x">Payment Methods</Link>
+          <Link to="/deposit">Payment Methods</Link>
+          <Link to="/terms-conditions">Terms and Conditions</Link>
+          <Link to="/privacy-policy">Privacy Policy</Link>
         </div>
       </div>
       <hr />
-      <p id="copyright">©2024, The Networking Owl | <Link to="/x">Terms and Conditions</Link> | <Link to="/x">Privacy Policy</Link></p>
+      <p id="copyright">©2024, The Networking Owl | <Link to="/terms-conditions">Terms and Conditions</Link> | <Link to="/privacy-policy">Privacy Policy</Link></p>
     </div>
   );
 }

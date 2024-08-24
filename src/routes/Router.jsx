@@ -24,6 +24,8 @@ import BalanceMod from "../components/BalanceMod";
 import BundlesBought from "../components/BundlesBought";
 import PackOrderConfirm from "../pages/PackOrderConfirm";
 import Contact from "../pages/Contact";
+import Terms from "../pages/Terms";
+import Policy from "../pages/Policy";
 
 const router = createBrowserRouter([
   {
@@ -133,6 +135,16 @@ const router = createBrowserRouter([
   {
     path: "/pack-order-conf",
     element: <UserProtected ProtectedPage={PackOrderConfirm} />,
+    errorElement: <RouterError/>
+  },
+  {
+    path: "/terms-conditions",
+    element: <Terms />,
+    errorElement: <RouterError/>
+  },
+  {
+    path: "/privacy-policy",
+    element: <Policy />,
     errorElement: <RouterError/>
   }
 ]);

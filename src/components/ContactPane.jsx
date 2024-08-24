@@ -11,7 +11,7 @@ export default function ContactPane() {
       <ul>
         <li><a href="https://www.facebook.com/the.networking.owl" target="_blank"><img src={facebook} alt="facebook link" /></a></li>
         <li><a href="https://www.instagram.com/the_networking_owl/" target="_blank"><img src={instagram} alt="instagram link" /></a></li>
-        <li><a href="" target="_blank"><img src={gmail} alt="gmail link" /></a></li>
+        <li><a href="mailto:thenetworkingowl@gmail.com" target="_blank"><img src={gmail} alt="gmail link" /></a></li>
         <li><a href="https://api.whatsapp.com/send?phone=923148964612" target="_blank"><img src={whatsapp} alt="whatsapp link" /></a></li>
       </ul>
     </div>
