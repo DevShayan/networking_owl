@@ -9,5 +9,14 @@ export default defineConfig({
       key: "./certificates/key.pem",
       cert: "./certificates/cert.pem"
     }
+  },
+  esbuild: {
+    supported: {
+      'top-level-await': true //browsers can handle top-level-await features
+    },
+  },
+  preview: {
+    host: true,
+    port: 5173
   }
 })
