@@ -11,7 +11,7 @@ export default function AppbarSimple() {
             </Link>
             <h1 id="appbar-title-simple">The Networking Owl</h1>
           </div>
-          <button>need help ?</button>
+          <a href="mailto:networkingowlhelp@gmail.com" target="_blank"><button>need help ?</button></a>
         </div>
     );
 }

@@ -17,7 +17,7 @@ export default function Footer() {
     <div id="footer">
       <div id="links">
         <div className="col">
-          <Link to="/x">Need help?</Link>
+          <a href="mailto:networkingowlhelp@gmail.com" target="_blank">Need help?</a>
           <a href="mailto:thenetworkingowl@gmail.com" target="_blank">thenetworkingowl@gmail.com</a>
           <a href="https://wa.me/923148764612" target="_blank">(+92) 314 8964612</a>
         </div>

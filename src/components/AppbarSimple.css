@@ -15,8 +15,8 @@
     align-items: center;
 }
 
-.heading-pack-simple + button {
-    text-transform: uppercase;
+.heading-pack-simple + a button {
+    text-transform: capitalize;
 }
 
 #appbar-title-simple {
