@@ -9,7 +9,7 @@ export default function Appbar() {
     <div id="appbar">
       <div className="heading-pack">
         <Link to="/"><img src={logo} alt="networking-owl logo" id="logo"/></Link>
-        <h1 id="appbar-title">The NetworkingOwl</h1>
+        <h1 id="appbar-title">The Networking Owl</h1>
       </div>
       <ul id="action-buttons">
         <li><NavLink id="ab-links" to="/">Home</NavLink></li>

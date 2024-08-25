@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
       </div>
       <hr />
-      <p id="copyright">©2024, The NetworkingOwl | <Link to="/terms-conditions">Terms and Conditions</Link> | <Link to="/privacy-policy">Privacy Policy</Link></p>
+      <p id="copyright">©2024, The Networking Owl | <Link to="/terms-conditions">Terms and Conditions</Link> | <Link to="/privacy-policy">Privacy Policy</Link></p>
     </div>
   );
 }

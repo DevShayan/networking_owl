@@ -9,7 +9,7 @@ export default function AppbarSimple() {
             <Link to="/">
               <img src={logo} alt="networking-owl logo" id="logo-simple"/>
             </Link>
-            <h1 id="appbar-title-simple">The NetworkingOwl</h1>
+            <h1 id="appbar-title-simple">The Networking Owl</h1>
           </div>
           <a href="mailto:networkingowlhelp@gmail.com" target="_blank"><button>need help ?</button></a>
         </div>
