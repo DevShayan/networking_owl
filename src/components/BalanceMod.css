@@ -2,60 +2,45 @@
   margin: 30px;
 }
 
-#b-mod button:disabled {
-  background-color: gray;
-  cursor: wait;
-}
-
 #b-mod .mod-inp-wrapper{
   display: flex;
   flex-direction: column;
 }
 
-#t-btn-wrapper, #b-btn-wrapper{
+#b-mod #cols-wrapper{
   display: flex;
-  justify-content: stretch;
 }
 
-
-#t-btn-wrapper #btn-empty{
-  background-color: transparent;
-  cursor: default;
+#b-mod #cols-wrapper > div:nth-child(2){
+  margin-left: 40px;
 }
 
-#t-btn-wrapper #btn-empty:hover{
-  border-color: transparent;
-  cursor: default;
+#btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  gap: 10px;
 }
 
-#t-btn-wrapper #btn-empty:focus{
-  outline-color: transparent;
-}
-
-#t-btn-wrapper button{
-  margin-right: 20px;
+#btn-wrapper button{
   color: white;
   background-color: #036788;
-  margin-top: 40px;
-  flex: 1;
 }
 
-#b-btn-wrapper {
-  margin: 20px 0;
+#b-mod button:disabled {
+  background-color: gray;
+  cursor: wait;
 }
 
-#b-btn-wrapper button{
-  margin-right: 20px;
-  color: white;
+#btn-wrapper button:nth-child(2){
   background-color: #40af40;
-  flex: 1;
 }
 
-#b-btn-wrapper button:last-child{
+#btn-wrapper button:last-child{
   background-color: #e02a2a;
 }
 
-#b-btn-wrapper button:last-child:disabled{
+#btn-wrapper button:last-child:disabled{
   background-color: gray;
 }
 

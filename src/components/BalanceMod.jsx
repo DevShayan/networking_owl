@@ -5,9 +5,13 @@ import { useSearchParams } from "react-router-dom";
 
 export default function BalanceMod() {
   const [balError, setBalError] = useState("");
-  const userBalRef = useRef();
+
   const uidRef = useRef();
   const amountRef = useRef();
+
+  const userBalRef = useRef();
+  const userNameRef = useRef();
+  const userEmailRef = useRef();
 
   const checkBalRef = useRef();
   const depRef = useRef();
@@ -77,7 +81,11 @@ export default function BalanceMod() {
 
   function checkBalClicked() {
     userBalRef.current.value = "";
+    userNameRef.current.value = "";
+    userEmailRef.current.value = "";
+
     uidRef.current.childNodes[2].innerHTML = "";
+
     const uidInput = uidRef.current.childNodes[1].value;
 
     if (uidInput == "") {
@@ -86,15 +94,19 @@ export default function BalanceMod() {
 
     if (uidInput != "") {
     checkBalRef.current.innerHTML = "Please wait...";
+
       getUser(uidInput)
         .then((res) => {
           userBalRef.current.value = res.balance;
-          checkBalRef.current.innerHTML = "Check balance";
+          userNameRef.current.value = res.name;
+          userEmailRef.current.value = res.email;
+
+          checkBalRef.current.innerHTML = "Get User Info";
           checkBalRef.current.disabled = false;
         })
         .catch((err) => {
           console.log(err);
-          checkBalRef.current.innerHTML = "Check balance";
+          checkBalRef.current.innerHTML = "Get User Info";
           checkBalRef.current.disabled = false;
           typeof err === "string" ? setBalError(err) : setBalError(err.message);
         });
@@ -103,28 +115,42 @@ export default function BalanceMod() {
 
   return (
     <div id="b-mod">
-      <div className="mod-inp-wrapper">
-        <label htmlFor="uid">User balance</label>
-        <input ref={userBalRef} type="number" id="uid" disabled={true} />
-        <span className="err-msg"></span>
-      </div>
-      <div className="mod-inp-wrapper" ref={uidRef}>
-        <label htmlFor="uid">User ID</label>
-        <input type="text" id="uid" defaultValue={uid} />
-        <span className="err-msg"></span>
-      </div>
-      <div className="mod-inp-wrapper" ref={amountRef}>
-        <label htmlFor="amt">Amount</label>
-        <input type="number" id="amt" defaultValue={amount} />
-        <span className="err-msg"></span>
-      </div>
-      <div id="t-btn-wrapper">
-        <button ref={checkBalRef} onClick={checkBalClicked}>Check balance</button>
-        <button id="btn-empty"></button>
-      </div>
-      <div id="b-btn-wrapper">
-        <button ref={depRef} onClick={transBtnPressed}>Deposit</button>
-        <button ref={withRef} onClick={transBtnPressed}>Withdraw</button>
+      <div id="cols-wrapper">
+        <div>
+          <div className="mod-inp-wrapper" ref={uidRef}>
+            <label htmlFor="uid">User ID</label>
+            <input type="text" id="uid" defaultValue={uid} />
+            <span className="err-msg"></span>
+          </div>
+          <div className="mod-inp-wrapper" ref={amountRef}>
+            <label htmlFor="amt">Amount</label>
+            <input type="number" id="amt" defaultValue={amount} />
+            <span className="err-msg"></span>
+          </div>
+          {/* Buttons */}
+          <div id="btn-wrapper">
+            <button ref={checkBalRef} onClick={checkBalClicked}>Get User Info</button>
+            <button ref={depRef} onClick={transBtnPressed}>Deposit</button>
+            <button ref={withRef} onClick={transBtnPressed}>Withdraw</button>
+          </div>
+        </div>
+        <div>
+          <div className="mod-inp-wrapper">
+            <label htmlFor="uid">User balance</label>
+            <input ref={userBalRef} type="number" id="uid" disabled={true} />
+            <span className="err-msg"></span>
+          </div>
+          <div className="mod-inp-wrapper">
+            <label htmlFor="uid">User name</label>
+            <input ref={userNameRef} type="text" id="uid" disabled={true} />
+            <span className="err-msg"></span>
+          </div>
+          <div className="mod-inp-wrapper">
+            <label htmlFor="uid">User email</label>
+            <input ref={userEmailRef} type="email" id="uid" disabled={true} />
+            <span className="err-msg"></span>
+          </div>
+        </div>
       </div>
       <span className="err-msg">{balError}</span>
     </div>
