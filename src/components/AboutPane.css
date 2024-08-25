@@ -4,6 +4,7 @@
 
 #about-pane {
     display: flex;
+    align-items: center;
     background-color: #0097c9;
     color: white;
     width: 100%;
