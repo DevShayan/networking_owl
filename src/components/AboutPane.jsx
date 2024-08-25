@@ -11,7 +11,7 @@ export default function AboutPane() {
       <div id="about-pane">
         <img src={model1} alt="model" id="modelf2" />
         <div id="about-content">
-          <h1 id="about-heading">Modes of earning through<br/> The Networking Owl</h1>
+          <h1 id="about-heading">Modes of earning through<br/> The NetworkingOwl</h1>
           <p id="para">You have two basic modes of earning as a member in our company</p>
           <div id="about-btn-wrapper">
             <Link to="/dashboard/profile"><button>get started</button></Link>
@@ -31,7 +31,7 @@ export default function AboutPane() {
         <h3 className="content-heading">Our second mode</h3>
         <h4>User earning through money tree</h4>
         <div id="para-wrapper">
-          <p>The networking owl is providing the authority to it&apos;s user&apos;s that they can first buy our bundles and then sell bundles to any of the buyers without any risk of copyright and our comission. whenever user buy our bundle they can sell it any time it&apos;s all theirs. The networking owl is providing the authority to it&apos;s user&apos;s that they can first buy our bundles and then sell bundles to any of the buyers without any risk of copyright and our comis sion. whenever user buy our bundle they can sell it any time it&apos;s all theirs. The networking owl is providing the authority to it&apos;s user&apos;s that they can first buy our bundles and then sell bundles to any</p>
+          <p>The networkingowl is providing the authority to it&apos;s user&apos;s that they can first buy our bundles and then sell bundles to any of the buyers without any risk of copyright and our comission. whenever user buy our bundle they can sell it any time it&apos;s all theirs. The networkingowl is providing the authority to it&apos;s user&apos;s that they can first buy our bundles and then sell bundles to any of the buyers without any risk of copyright and our comis sion. whenever user buy our bundle they can sell it any time it&apos;s all theirs. The networkingowl is providing the authority to it&apos;s user&apos;s that they can first buy our bundles and then sell bundles to any</p>
           <img src={ model2 } alt="model 2" id="modelf3" />
         </div>
       </div>
