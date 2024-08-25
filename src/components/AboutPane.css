@@ -70,6 +70,10 @@
 
 #tree-wrapper p {
     text-align: justify;
+    background-color: gainsboro;
+    height: min-content;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #second-mode + a button {
