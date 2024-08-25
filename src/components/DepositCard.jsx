@@ -4,8 +4,12 @@ import "./DepositCard.css"
 
 export default function DepositCard({cardTitle, cardImg, CardSvg, accNum, slipNum}) {
 
+  function getCCNumber(num) {
+    return "92" + num.slice(1);
+  }
+
   const adminLink = `${clientBaseURL}/admin-dashboard/balance-mod?uid=${user.id}`;
-  const whatsappLink = `https://api.whatsapp.com/send?phone=${slipNum}&text=${adminLink}`;
+  const whatsappLink = `https://api.whatsapp.com/send?phone=${getCCNumber(slipNum)}&text=${adminLink}`;
 
   return (
     <div id="dep-card">
